@@ -1,38 +1,96 @@
 .App {
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.task-sections {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* justify-content: space-between; */
+  height: 70vh;
+  /* width: 70%; */
+  
+}
+
+.task-list {
+  border: 1px solid #ccc;
+  /* margin-right: 10px; */
+  padding: 10px;
+  width: 30%;
+  background-color: #f1f1f1;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.task {
+  box-shadow: #ccc 0px 4px 3px;
+    padding: 10px 10px 20px 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 2px;
+}
+.wraptask{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 70%;
+  gap: 10px;
+
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input {
+  margin: 5px;
+}
+.title{
+  font-size: 18px;
+  font-weight: 500;
+  color: #282828;
+  padding: 5px 0;
+}
+.heading{
+  font-size: 18px;
+    font-weight: 500;
+    color: #545454;
+    padding-top: 8px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.taskinput{
+  width: 200px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #dee8ff;
+  
+}
+.taskinput:focus{
+  outline: none;
+}
+.submit{
+  padding: 10px;
+  background-color: #4CAF50;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
+.btn{
+  margin-top: 10px;
+  padding: 8px 40px;
+  background-color: #0027a7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.disc{
+  font-size: 16px;
+  color: #545454;
+  padding: 5px 0;
 }
