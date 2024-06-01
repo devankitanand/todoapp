@@ -25,7 +25,7 @@ function App() {
   return (
     <DndProvider backend={HTML5Backend}>
       <div className="App">
-        <h1>To-Do List</h1>
+        <div className='text-4xl font-semibold pb-4'>To-Do List</div>
         <TaskInput addTask={addTask} />
         <div className="task-sections">
           <div className='wraptask'>

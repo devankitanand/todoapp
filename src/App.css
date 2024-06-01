@@ -15,7 +15,7 @@
 .task-list {
   border: 1px solid #ccc;
   /* margin-right: 10px; */
-  padding: 10px;
+  padding: 10px 20px;
   width: 30%;
   background-color: #f1f1f1;
   overflow: hidden;
@@ -29,6 +29,7 @@
     margin-bottom: 10px;
     background-color: white;
     border-radius: 2px;
+    cursor: move;
 }
 .wraptask{
   display: flex;
